@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h2>
+      SPLI <br />
+      TTER
+    </h2>
+    <div class="container">
+      <div class="first-card">
+        <div class="bill-container">
+          <p>Bill</p>
+
+          <input class="input" type="text" placeholder="$" />
+        </div>
+        <p>Select Tip %</p>
+        <div class="flex-btn">
+          <div>
+            <button class="main-btn">5%</button>
+            <button class="main-btn">10%</button>
+            <button class="main-btn">15%</button>
+          </div>
+          <div>
+            <button class="main-btn">25%</button>
+            <button class="main-btn">50%</button>
+            <input class=" main-btn custom" placeholder="Custom"></input>
+          </div>  
+        </div>
+        <div class="bill-container">
+          <p>Number of People</p>
+          <input class="input" type="text" />
+        </div>
+      </div>
+
+      <div class="second-card">
+        <div class="cont-content">
+          <p><span class="bold-txt">Tip Amount</span> / person</p>
+          <h2 class="sec-price">$4.27</h2>
+        </div>
+
+        <div class="cont-content">
+          <p><span class="bold-txt">Total</span> / person</p>
+          <h2 class="sec-price">$32.79</h2>
+        </div>
+        <button><h5>Reset</h5></button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/oladapo-cyber">Yinusa Oladapo</a>.
+    </div>
+  </body>
+</html>
