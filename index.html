@@ -26,49 +26,50 @@
     </style>
 
     <link rel="stylesheet" href="./index.css" />
+    <script  type="module" defer src="./index.js"></script>
   </head>
   <body>
-    <h2>
+    <h2 style="color: #406365; margin-top: 40px;">
       SPLI <br />
       TTER
     </h2>
     <div class="container">
       <div class="first-card">
-        <div class="bill-container">
+        <div  class="bill-container">
           <p>Bill</p>
 
-          <input class="input" type="text" placeholder="$" />
+          <input id="bill" class="input" type="text" placeholder="$" />
         </div>
-        <p>Select Tip %</p>
+        <p style="margin-top: 60px;">Select Tip %</p>
         <div class="flex-btn">
           <div>
-            <button class="main-btn">5%</button>
-            <button class="main-btn">10%</button>
-            <button class="main-btn">15%</button>
+            <button id="five" class="main-btn">5%</button>
+            <button id="ten" class="main-btn">10%</button>
+            <button id="fifteen" class="main-btn">15%</button>
           </div>
           <div>
-            <button class="main-btn">25%</button>
-            <button class="main-btn">50%</button>
-            <input class=" main-btn custom" placeholder="Custom"></input>
+            <button id="twenty-five" class="main-btn">25%</button>
+            <button id="fifty" class="main-btn">50%</button>
+            <input id="custom" class=" main-btn custom" placeholder="Custom"></input>
           </div>  
         </div>
-        <div class="bill-container">
-          <p>Number of People</p>
-          <input class="input" type="text" />
+        <div   class="bill-container">
+          <p style="margin-top: 25px;">Number of People</p>
+          <input id="people" class="input" type="text" placeholder="People" />
         </div>
       </div>
 
       <div class="second-card">
-        <div class="cont-content">
+        <d0iv class="tip-details">
           <p><span class="bold-txt">Tip Amount</span> / person</p>
-          <h2 class="sec-price">$4.27</h2>
-        </div>
+          <h2 id="tip" class="tip-amount">#0.00</h2>
+        </d0iv>
 
-        <div class="cont-content">
+        <div class="tip-details">
           <p><span class="bold-txt">Total</span> / person</p>
-          <h2 class="sec-price">$32.79</h2>
+          <h2 id="total" class="tip-amount">#0.00</h2>
         </div>
-        <button><h5>Reset</h5></button>
+        <button id="reset"><h5>Reset</h5></button>
       </div>
     </div>
 
