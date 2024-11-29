@@ -29,45 +29,44 @@
     <script  type="module" defer src="./index.js"></script>
   </head>
   <body>
-    <h2 style="color: #406365; margin-top: 40px;">
+    <h2 class="splitter" style="color: #406365; margin-top: 40px;">
       SPLI <br />
       TTER
     </h2>
     <div class="container">
       <div class="first-card">
-        <div  class="bill-container">
-          <p>Bill</p>
-
-          <input id="bill" class="input" type="text" placeholder="$" />
+        <div class="svg-position bill-container card-labels">
+          <label for="input"><p>Bill</p></label>
+          <input id="bill" class="input" type="text" placeholder="" />
+          <img src="./images/icon-dollar.svg" alt="">
         </div>
-        <p style="margin-top: 60px;">Select Tip %</p>
-        <div class="flex-btn">
-          <div>
+        <p class="bill-container card-labels" style="margin-top: 60px;">Select Tip %</p>
+         
+          <div class="button-container">
             <button id="five" class="main-btn">5%</button>
             <button id="ten" class="main-btn">10%</button>
             <button id="fifteen" class="main-btn">15%</button>
-          </div>
-          <div>
             <button id="twenty-five" class="main-btn">25%</button>
             <button id="fifty" class="main-btn">50%</button>
-            <input id="custom" class=" main-btn custom" placeholder="Custom"></input>
-          </div>  
-        </div>
-        <div   class="bill-container">
-          <p style="margin-top: 25px;">Number of People</p>
-          <input id="people" class="input" type="text" placeholder="People" />
+            <input id="custom" class="main-btn custom" placeholder="Custom"></input>
+          </div>   
+        <div class="svg-position bill-container card-labels">
+          <label for="input"><p>Number of People</p></label>
+          <input id="people" class="input" type="text" placeholder="" />
+          <img src="./images/icon-person.svg" alt="person icon"><b></b>
         </div>
       </div>
 
+   
       <div class="second-card">
-        <d0iv class="tip-details">
+        <div class="tip-details">
           <p><span class="bold-txt">Tip Amount</span> / person</p>
-          <h2 id="tip" class="tip-amount">#0.00</h2>
-        </d0iv>
+          <h2 id="tip" class="tip-amount">$0.00</h2>
+        </div>
 
         <div class="tip-details">
           <p><span class="bold-txt">Total</span> / person</p>
-          <h2 id="total" class="tip-amount">#0.00</h2>
+          <h2 id="total" class="tip-amount">$0.00</h2>
         </div>
         <button id="reset"><h5>Reset</h5></button>
       </div>

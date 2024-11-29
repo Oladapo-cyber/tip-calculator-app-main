@@ -34,9 +34,9 @@ const calculateTip = (value) => {
 
   console.log(percent, billAmount, tipPerPerson, billAmountPerPerson);
 
-  tip.textContent = `${"#" + tipPerPerson.toFixed(2)}`;
+  tip.textContent = `${"$" + tipPerPerson.toFixed(2)}`;
 
-  total.textContent = `${"#" + billAmountPerPerson.toFixed(2)}`;
+  total.textContent = `${"$" + billAmountPerPerson.toFixed(2)}`;
 };
 
 bill.addEventListener("change", function () {
@@ -71,7 +71,7 @@ fifty.addEventListener("click", () => {
 reset.addEventListener("click", () => {
   bill.value = "";
   people.value = "";
-  tip.textContent = "#0.00";
-  total.textContent = "#0.00";
+  tip.textContent = "$0.00";
+  total.textContent = "$0.00";
   custom.value = "";
 });
